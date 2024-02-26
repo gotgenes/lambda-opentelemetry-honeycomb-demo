@@ -21,7 +21,8 @@ Resources:
       Architectures:
         - x86_64
       Layers:
-        - !Sub "arn:aws:lambda:${AWS::Region}:901920570463:layer:aws-otel-python-amd64-ver-1-21-0:1"
+        - !Sub "arn:aws:lambda:${AWS::Region}:184161586896:layer:opentelemetry-collector-amd64-0_4_0:1"
+        - !Sub "arn:aws:lambda:${AWS::Region}:184161586896:layer:opentelemetry-python-0_4_0:1"
       Environment:
         Variables:
           AWS_LAMBDA_EXEC_WRAPPER: /opt/otel-instrument
